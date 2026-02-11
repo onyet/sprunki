@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Play button circle -->
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M54,54m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0"/>
+    
+    <!-- Play triangle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,40 L46,68 L70,54 Z"/>
+    
+    <!-- Decorative stars -->
+    <path
+        android:fillColor="#FFD23F"
+        android:pathData="M30,30 L32,34 L36,34 L33,37 L34,41 L30,38 L26,41 L27,37 L24,34 L28,34 Z"/>
+    
+    <path
+        android:fillColor="#FFD23F"
+        android:pathData="M78,30 L80,34 L84,34 L81,37 L82,41 L78,38 L74,41 L75,37 L72,34 L76,34 Z"/>
+    
+    <path
+        android:fillColor="#FFD23F"
+        android:pathData="M54,78 L56,82 L60,82 L57,85 L58,89 L54,86 L50,89 L51,85 L48,82 L52,82 Z"/>
+    
+</vector>
