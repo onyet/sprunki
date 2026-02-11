@@ -1,0 +1,39 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Vim swap
+*.swp
+*~
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local config (SDK path etc.)
+local.properties
+
+# Android
+*.apk
+*.ap_
+*.dex
+*.class
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# Node
+node_modules/
