@@ -1,5 +1,11 @@
 [
     {
+        "name": "Sprunki",
+        "link": "https://sprunki.org//game/sprunki-original/",
+        "thumbnail": "https://sprunki.org/cache/data/image/game/sprunki-game-image1-m197x197.jpg",
+        "orientation": "landscape"
+    },
+    {
         "name": "SprunkBig",
         "link": "https://html-classic.itch.zone/html/13782893/index.html",
         "thumbnail": "https://sprunki.org/cache/data/image/game/sprunki-but-everyone-is-big-m197x197.jpg",
@@ -33,6 +39,30 @@
         "name": "Sprunki OC Real",
         "link": "https://html-classic.itch.zone/html/13980558/index.html",
         "thumbnail": "https://sprunki.org/cache/data/image/game/sprunki-oc-real-m197x197.png",
+        "orientation": "landscape"
+    },
+    {
+        "name": "Sprunki Sprunked",
+        "link": "https://sprunkedgame.com/game/sprunki-sprunked/",
+        "thumbnail": "https://sprunkedgame.com/cache/data/image/game/sprunked-game-favicon-m197x197.png",
+        "orientation": "landscape"
+    },
+    {
+        "name": "SKRUMPY",
+        "link": "https://html-classic.itch.zone/html/15952730/index.html",
+        "thumbnail": "https://sprunki.org/cache/data/image/game/skrumpy-m197x197.jpg",
+        "orientation": "landscape"
+    },
+    {
+        "name": "Sprunki Mustard",
+        "link": "https://kdata1.com/2024/10/colorbox-mustard/",
+        "thumbnail": "https://sprunki.org/cache/data/image/game/sprunki-mustard-m197x197.jpg",
+        "orientation": "landscape"
+    },
+    {
+        "name": "Sprunki Grown Up",
+        "link": "https://gosuperfunny.com/sprunki-grown-up.html",
+        "thumbnail": "https://cdn.sprunki.com/img/sprunki-grown-up.webp",
         "orientation": "landscape"
     }
 ]

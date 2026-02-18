@@ -2,6 +2,8 @@ package id.onyet.games.sprunki
 
 import android.annotation.SuppressLint
 import android.content.pm.ActivityInfo
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
@@ -75,6 +77,13 @@ class GameActivity : AppCompatActivity() {
         }
     }
 
+    private fun isNetworkAvailable(): Boolean {
+        val connectivityManager = getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager
+        val network = connectivityManager.activeNetwork ?: return false
+        val capabilities = connectivityManager.getNetworkCapabilities(network) ?: return false
+        return capabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
+    }
+
     @SuppressLint("SetJavaScriptEnabled")
     private fun setupWebView() {
         webView.settings.apply {
@@ -87,9 +96,16 @@ class GameActivity : AppCompatActivity() {
             builtInZoomControls = false
             displayZoomControls = false
             setSupportZoom(false)
-            cacheMode = WebSettings.LOAD_DEFAULT
             mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
             mediaPlaybackRequiresUserGesture = false
+
+            // Aggressive caching — load from cache when offline
+            databaseEnabled = true
+            cacheMode = if (isNetworkAvailable()) {
+                WebSettings.LOAD_DEFAULT
+            } else {
+                WebSettings.LOAD_CACHE_ELSE_NETWORK
+            }
         }
 
         webView.webViewClient = object : WebViewClient() {
