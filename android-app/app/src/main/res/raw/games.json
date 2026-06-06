@@ -64,5 +64,11 @@
         "link": "https://gosuperfunny.com/sprunki-grown-up.html",
         "thumbnail": "https://cdn.sprunki.com/img/sprunki-grown-up.webp",
         "orientation": "landscape"
+    },
+    {
+        "name": "Sprinkle Fawwaz",
+        "link": "file:///android_asset/local/Sprinkle_Fawwaz.html",
+        "thumbnail": "https://cdn.sprunki.com/img/sprinkle-m200.webp",
+        "orientation": "landscape"
     }
 ]
